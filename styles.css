@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #F0EAD6;
+    margin: 250px 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#card {
+    width: 46rem;
+    height: auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.heading, .prep, .ingredients, .instructions, .nutrition {
+    margin-bottom: 20px;
+}
+
+ol li::marker {
+    color: #854632
+}
+
+ul li::marker {
+    color: #854632
+}
+
+.heading h1 {
+    font-size: 2em;
+    font-family: 'Young Serif',  serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.prep {
+    background-color: rgba(135, 38, 87, 0.1);
+    height: auto;
+    padding: 28px;
+    border-radius: 12px;
+}
+
+.prep h3 {
+    font-size: 1.2em;
+    font-family: 'Outfit', sans-serif;
+    color: #872657;
+}
+
+.prep ul {
+    padding-left: 40px;
+}
+
+.prep li {
+    padding-left: 10px;
+}
+
+h3 {
+    font-size: 2em;
+    padding-bottom: 23px;
+}
+
+li, p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+    color: #5F564D;
+    line-height: 30px;
+}
+
+span {
+    color: #5F564D;
+    font-weight: bold;
+}
+
+.instructions, .ingredients, .nutrition, .value {
+    color: #854632;
+    font-weight: bold;
+}
+
+.name {
+    padding-right: 320px;
+    color: #5F564D;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+.table-container {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table-container td {
+    border-bottom: 1px solid #E3DDD7;
+    padding-right: 220px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+  
+  .table-container td.name {
+    padding-left: 32px;
+    padding-right: 210px; 
+    font-size: 1em;
+    font-family: 'Outfit', sans-serif;
+    font-weight: lighter;
+  }
+  
+  .table-container td.value {
+    text-align: left; 
+    font-size: 1em;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .table-container tr:last-child td {
+    border-bottom: none;
+  }
+
+  @media only screen and (max-width: 375px) {
+    body {
+      margin: 250px 10px; 
+      overflow-x: hidden; 
+    }
+  
+    #card {
+      width: calc(100% - 20px); 
+      max-width: 355px; 
+      padding: 60px 50px; 
+      margin-left: auto;
+      margin-right: auto; 
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .table-container {
+        width: 100%; 
+        max-width: 100%; 
+        overflow-x: auto; 
+      }
+    
+      .table-container table {
+        table-layout: 355px; 
+        width: 90%;
+      }
+  }
+  
+  
+
+  
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
