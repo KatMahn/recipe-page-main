@@ -13,6 +13,8 @@ body {
     margin: 250px 600px;
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 #card {
@@ -76,6 +78,23 @@ ul li::marker {
     padding-left: 10px;
 }
 
+.ingredients ul {
+    padding-left: 27px
+}
+
+.ingredients li {
+    padding-left: 15px;
+}
+
+.instructions ol {
+    padding-left: 27px
+}
+
+.instructions li {
+    padding-left: 15px;
+}
+
+
 h3 {
     font-size: 2em;
     padding-bottom: 23px;
@@ -127,7 +146,7 @@ span {
   }
   
   .table-container td.value {
-    text-align: left; 
+    text-align: right; 
     font-size: 1em;
     font-family: 'Outfit', sans-serif;
   }
@@ -136,7 +155,7 @@ span {
     border-bottom: none;
   }
 
-  @media only screen and (max-width: 375px) {
+  @media (max-width: 375px) {
     body {
       margin: 250px 10px; 
       overflow-x: hidden; 
@@ -146,8 +165,7 @@ span {
       width: calc(100% - 20px); 
       max-width: 355px; 
       padding: 60px 50px; 
-      margin-left: auto;
-      margin-right: auto; 
+      margin: auto; 
     }
 
     .image img {
@@ -158,14 +176,21 @@ span {
 
     .table-container {
         width: 100%; 
-        max-width: 100%; 
+        max-width: 100%;
         overflow-x: auto; 
       }
     
-      .table-container table {
-        table-layout: 355px; 
-        width: 90%;
+      .table-container table { 
+        width: 100%;
       }
+
+      .table-container td.name {
+        padding-right: 10px; 
+    }
+    
+    .table-container td.value {
+        padding-left: 60px; 
+    }
   }
   
   
